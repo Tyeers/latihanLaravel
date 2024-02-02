@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Halo nama saya {{$name}}</h1>
-    <h1>Alamat saya di {{$address}}</h1>
+    <h1>Halo nama saya {{$name}},</h1>
+    <h1>Alamat saya di {{$address}}.</h1>
 </body>
 </html>
