@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HitungController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
@@ -34,3 +35,5 @@ Route::get('/daftar  ', function () {
 Route::get('/dashboard  ', function () {
     return view('dashboard ');
 }) -> name('dashboard ');
+
+Route::get('/dashboard', [DashboardController::class, 'index']);
