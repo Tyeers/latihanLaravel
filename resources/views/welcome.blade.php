@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <header>
+        <link rel="stylesheet" href="welcome.css">
+        <title>Dashboard</title>
+    </header>
     <body>
-        <h1>Halo ges</h1>
-        <a href="pendataan">pendataan</a>
-        <a href="hitung">hitung</a>
-        <a href="daftar">daftar</a>
+        <div class="nav-bar">
+            <ul>
+                <li id="icon-dashboard"><p>Masukkan IMG</p></li>
+                <li>Kelas</li>
+                <li>Murid</li>
+                <li>Foto</li>
+                <li>Video</li>
+            </ul>
+        </div>
+        <div class="main-dashboard">
+
+        </div>
     </body>
 </html>
