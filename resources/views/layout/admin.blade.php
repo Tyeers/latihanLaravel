@@ -35,7 +35,21 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+                {{-- Content wrapper, contains page content --}}
+                <div class="content-wrapper">
+                {{-- content header (page header) --}}
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>@yield('judul')</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
                 @yield('content')
+                @yield('tabel')
                 <!-- /.container-fluid -->
 
             </div>
