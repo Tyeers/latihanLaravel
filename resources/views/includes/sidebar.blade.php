@@ -13,13 +13,13 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="/dash">
+        <a class="nav-link" href="/dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
+    <hr class="sidebar-divider my-0">
     <li class="nav-item active">
         <a class="nav-link" href="/pelanggan">
             <i class="fas fa-fw fa-users"></i>
@@ -27,11 +27,9 @@
     </li>
 
     <!-- Divider -->
-          <hr class="sidebar-divider my-0">
-
-    <!-- Nav Item - Dashboard-->
+    <hr class="sidebar-divider my-0">
     <li class="nav-item active">
-        <a href="nav-link" href="/barang">
+        <a class="nav-link" href="/pelanggan">
             <i class="fas fa-fw fa-gift"></i>
             <span>Barang</span></a>
     </li>
