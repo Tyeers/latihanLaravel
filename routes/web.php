@@ -39,3 +39,5 @@ Route::get('/dashboard  ', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/pelanggan', [PelangganController::class, 'index']);
+Route::get('/tambahpelanggan', [PelangganController::class, 'tambahpelanggan']);
+Route::post('/pelanggan', [PelangganController::class, 'pelanggan']);
