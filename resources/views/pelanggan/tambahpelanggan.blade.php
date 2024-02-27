@@ -23,13 +23,13 @@
 
     <div class="form-group p-3">
         <label>Alamat</label>
-        <input type="number" name='alamat' class="form-control" placeholder="Masukkan Alamat">
+        <input type="text" name='alamat' class="form-control" placeholder="Masukkan Alamat">
         @error('alamat')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
     </div>
 
-    <div class="form-group p-3">
+    <div class="p-3">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </form>

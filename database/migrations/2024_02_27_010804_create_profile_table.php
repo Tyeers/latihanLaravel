@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('profile', function (Blueprint $table) {
             $table->id();
-            $table->string('nama lengkap');
-            $table->integer('no_hp');
+            $table->string('nama_lengkap');
+            $table->string('no_hp');
             $table->string('alamat');
             $table->timestamps();
         });
