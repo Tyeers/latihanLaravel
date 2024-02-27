@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('jumlah_brg');
             $table->integer('total_brg');
             $table->foreignId('pelanggan_id')->references('id')->on('pelanggan')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('barang')->references('id')->on('barang')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('barang_id')->references('id')->on('barang')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
