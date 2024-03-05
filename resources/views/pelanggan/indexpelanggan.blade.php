@@ -18,8 +18,25 @@ Data Pelanggan
       </thead>
 
       <tbody>
+        @forelse ($profile as $key => $value)
+        <tr>
+          <th scope="row">{{$key + 1}}</th>
+          <td>{{$value->nama_lengkap}}</td>
+          <td>{{ $value->no_hp}}</td>
+          <td>{{ $value->alamat}}</td>
+          <td class="mr-3">
+            <a href="/pelanggan/{{$value->id}}" class="btn btn-info">Show</a>
+            <a href="/pelanggan/{{$value->id}}/edit" class="btn btn -primary">Edit</a>
+            <a href="/pelanggan/ {{$value->id}}" class="btn btn -danger" data-confirm-delete="true">Delete</a>
+          </td>
+        </tr>
       
       </tbody>
+      @empty
+      <tr colspan="6">
+        <td>No data</td>
+      </tr>
+      @endforelse
       </table>
 </div>
 @endsection

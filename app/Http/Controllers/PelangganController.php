@@ -13,7 +13,7 @@ class PelangganController extends Controller
     {
         $profile = DB::table('profile')->get();
 
-        return view('pelanggan.indexpelanggan');
+        return view('pelanggan.indexpelanggan', compact('profile'));
     }
 
     public function tambahpelanggan()
@@ -34,6 +34,8 @@ class PelangganController extends Controller
             'no_hp' => $request->nohp,
             'alamat' => $request->alamat,
         ]);
+
+        Alert::success('Success', 'Data Berhasil');
 
         return redirect('/pelanggan');
     }

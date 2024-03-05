@@ -94,5 +94,6 @@
     @include('includes.script')
 
 </body>
+@include('sweetalert::alert')
 
 </html>
