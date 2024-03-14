@@ -26,8 +26,8 @@ Data Pelanggan
           <td>{{ $value->alamat}}</td>
           <td class="mr-3">
             <a href="/pelanggan/{{$value->id}}" class="btn btn-info">Show</a>
-            <a href="/pelanggan/{{$value->id}}/edit" class="btn btn -primary">Edit</a>
-            <a href="/pelanggan/ {{$value->id}}" class="btn btn -danger" data-confirm-delete="true">Delete</a>
+            <a href="/pelanggan/{{$value->id}}/edit" class="btn btn-success">Edit</a>
+            <a href="/pelanggan/ {{$value->id}}" class="btn btn-danger" data-confirm-delete="true">Delete</a>
           </td>
         </tr>
       
